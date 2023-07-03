@@ -1,0 +1,109 @@
+
+*body{
+    margin: 0;
+}
+#root{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    position: absolute;
+    display:inline ;
+    margin: 0;
+    top: 15px;;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    font-size: 15px;
+    // padding-top: 15px;
+    
+}
+.home{
+    background-color: rgb(182, 182, 216);
+    height: 80px; 
+    justify-content: space-evenly;
+    justify-items: end;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-top: -0.5rem;
+// justify-content: center;
+// gap: 10px;
+&svg-image{
+right: 20%;
+position: relative;
+}
+
+    &-link{
+text-decoration: none;
+color: white;
+font-weight: bold;
+justify-content: end;
+right: 150px;
+
+
+    }
+
+    .enter{
+        position: absolute;
+        // top:45px;
+        background-color: rgba(75, 149, 149, 0.441);
+        display: none;
+      cursor: pointer;
+        z-index: 1;
+        height: 150px ;
+        padding: 10px;
+        color: black;
+    }
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-size: 20px;
+        display: inline;
+    }
+
+       
+     &-list{
+
+        margin-top: 30px;
+        list-style: none;
+        justify-content: flex-end;
+        right: 150px;
+     }
+   
+     &-image{
+        // margin-top: 5px;
+
+        
+        // width: 100%;
+     }
+
+     .home-link:hover + .enter{
+        background-color: #11111144;
+        display: block;
+       
+        cursor: pointer;
+
+       }
+       .home-link:hover ~ .enter,.enter:hover{
+        // display: flex;
+        display: inline-block;
+       }
+}
+@media (max-width:425px) and (min-width:280px){
+
+    .main-container{
+        position:relative;
+        top: 90px;
+        .picture{
+            height:35rem;
+            width: 100%;
+        }
+    
+    }
+}
+
+
+

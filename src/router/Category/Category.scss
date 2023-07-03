@@ -1,0 +1,156 @@
+.container {
+    // display: flex;
+    // color: aqua;
+    
+    // position:absolute;
+    // top: 90px;
+    background-color: alpha($color: #000000);
+    z-index: -1;
+
+    .sortmain {
+        background-color: #000000;
+        .sorting {
+            position: absolute;
+            top: 98px;
+            right: 0;
+            color: rgba(198, 28, 59, 0.935);
+            border: 1px solid black;
+            background: rgba(121, 201, 121, 0.239);
+            cursor: pointer;
+
+        }
+    }
+
+    .main {
+        display: flex;
+         display: grid;
+     position: relative;
+     top: 120px;
+     z-index: 1;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 2rem;
+        margin: 0px;
+        background-color: rgb(216, 216, 243);
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+
+
+
+        .contents {
+            border: 1px solid transparent;
+            padding: 1rem;
+           // background-color: aqua;
+
+            .image {
+                width: 80%;
+                border: 1px solid black;
+                box-shadow: 1px 5px 10px rgba(122, 71, 71, 0.367);
+                height: 30vh;
+                // display: flex;
+                padding: 15px;
+                padding-left: 30px;
+            }
+
+            .heading {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                text-align: center;
+                // text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: purple
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .price {
+                font-size: 1rem;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+  
+
+}
+
+@media (max-width:425px) and (min-width:280px) {
+    .container {
+        height: 25%;
+        width: 100%;
+
+        .main {
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1rem;
+
+            // width: 100%;
+         
+
+            .contents {
+                width: 60%;
+                border: 1px solid transparent;
+                padding: 1rem;
+                background: #f1eeee;
+                .image {
+                    width: 50%;
+                    border: 1px solid black;
+                    box-shadow: 1px 5px 10px rgba(122, 71, 71, 0.367);
+                    height: 25%;
+                    // display: flex;
+                    // padding: 15px;
+                    // padding-left: 30px;
+                }
+    
+                .heading {
+                    font-size: 0.5rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                    // text-decoration: none;
+                    color: black;
+    
+                    &:hover {
+                        color: purple
+                    }
+                }
+    
+                a {
+                    text-decoration: none;
+                }
+    
+                .price {
+                    font-size: 0.7rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+       
+
+        .sortmain {
+            .sorting {
+                // float: right;
+                // width: 10vh;
+                // // color: rgba(198, 28, 59, 0.935);
+                border: 1px solid green;
+                background: rgba(121, 201, 121, 0.239);
+                // cursor: pointer;
+                // top: 20px;
+                bottom: 10px;
+
+            }
+        }
+
+    }
+}
